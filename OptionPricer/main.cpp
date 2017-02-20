@@ -26,7 +26,7 @@ int main() {
     double T = 0.5;
     double K = 110;
     double q = 0;
-    double H = 114;
+    double H = 110;
     
     const int N = 3.0;
     const double paths = 3.0;
