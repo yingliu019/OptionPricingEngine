@@ -2,8 +2,8 @@
 //  NaiveMC.cpp
 //  OptionPricer
 //
-//  Created by 刘颖 on 1/25/17.
-//  Copyright © 2017 刘颖. All rights reserved.
+//  Created by YingLiu on 1/25/17.
+//  Copyright © 2017 YingLiu. All rights reserved.
 //
 
 
@@ -26,7 +26,7 @@ double AntitheticMC::PriceForEuropean(const shared_ptr<Payoff>& payoff) {
     //double q =  stochasticProcess_->GetDividend();
     
     bool flag = payoff->knockCondition();
-    assert(flag != true && "not recommend use MC for barrier");
+    assert(flag != true && "not recommend to use MC for barrier");
     
     RandomNumberGenerator gen;
     gen.SetSeed();
