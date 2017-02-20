@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D1A13351E39289900282853 /* FDCrankNicolson.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D1A13331E39289900282853 /* FDCrankNicolson.cpp */; };
+		4D1A133B1E3962A700282853 /* MCForAmerican.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D1A13391E3962A700282853 /* MCForAmerican.cpp */; };
+		4D79A33B1E4FD9D1008E2B8E /* BlackScholesProcess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D79A33A1E4FD9D1008E2B8E /* BlackScholesProcess.cpp */; };
+		4D91243D1E3817F4005B8A1C /* BinominalTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D91243B1E3817F4005B8A1C /* BinominalTree.cpp */; };
+		4D9124401E381FAF005B8A1C /* UpAndOutPutPayoff.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D91243E1E381FAF005B8A1C /* UpAndOutPutPayoff.cpp */; };
+		4D9124431E382013005B8A1C /* TrinominalTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D9124411E382013005B8A1C /* TrinominalTree.cpp */; };
+		4DB39E381E4D4B3C003AF56D /* AntitheticMC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DB39E361E4D4B3C003AF56D /* AntitheticMC.cpp */; };
+		4DB39E3C1E4D5211003AF56D /* MeanReverseProcess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DB39E3A1E4D5211003AF56D /* MeanReverseProcess.cpp */; };
+		4DB39E3F1E4D53F9003AF56D /* OrdinaryMC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DB39E3D1E4D53F9003AF56D /* OrdinaryMC.cpp */; };
+		4DB39E451E4D8F15003AF56D /* ControlVariableMC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DB39E431E4D8F15003AF56D /* ControlVariableMC.cpp */; };
+		4DB39E491E4D9472003AF56D /* ImportanceSamplingMC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DB39E471E4D9472003AF56D /* ImportanceSamplingMC.cpp */; };
+		4DB39E541E4D9B80003AF56D /* BlackScholesAnalytical.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DB39E521E4D9B80003AF56D /* BlackScholesAnalytical.cpp */; };
+		4DB39E571E4DA1C2003AF56D /* NormalDistribution.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DB39E551E4DA1C2003AF56D /* NormalDistribution.cpp */; };
+		4DC244041E37EEDE00EA3F1F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DC244031E37EEDE00EA3F1F /* main.cpp */; };
+		4DC2440C1E37EF9300EA3F1F /* AmericanOption.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DC2440A1E37EF9300EA3F1F /* AmericanOption.cpp */; };
+		4DC2440F1E37EFF800EA3F1F /* BinaryCallPayoff.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DC2440D1E37EFF800EA3F1F /* BinaryCallPayoff.cpp */; };
+		4DC244121E37F07200EA3F1F /* BinaryPutPayoff.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DC244101E37F07200EA3F1F /* BinaryPutPayoff.cpp */; };
+		4DC244181E37F11400EA3F1F /* Option.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DC244161E37F11400EA3F1F /* Option.cpp */; };
+		4DC2441B1E37F17A00EA3F1F /* Payoff.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DC244191E37F17A00EA3F1F /* Payoff.cpp */; };
+		4DC244211E37F20C00EA3F1F /* RandomNumberGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DC2441F1E37F20C00EA3F1F /* RandomNumberGenerator.cpp */; };
+		4DC244271E37F45500EA3F1F /* CallPayoff.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DC244251E37F45500EA3F1F /* CallPayoff.cpp */; };
+		4DC2442A1E37F4A000EA3F1F /* EuropeanOption.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DC244281E37F4A000EA3F1F /* EuropeanOption.cpp */; };
+		4DC244301E37F52200EA3F1F /* PutPayoff.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DC2442E1E37F52200EA3F1F /* PutPayoff.cpp */; };
+		4DC244361E37F65100EA3F1F /* FDExplicit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DC244341E37F65100EA3F1F /* FDExplicit.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4DC243FE1E37EEDE00EA3F1F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4D1A13331E39289900282853 /* FDCrankNicolson.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FDCrankNicolson.cpp; sourceTree = "<group>"; };
+		4D1A13341E39289900282853 /* FDCrankNicolson.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FDCrankNicolson.hpp; sourceTree = "<group>"; };
+		4D1A13391E3962A700282853 /* MCForAmerican.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MCForAmerican.cpp; sourceTree = "<group>"; };
+		4D1A133A1E3962A700282853 /* MCForAmerican.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MCForAmerican.hpp; sourceTree = "<group>"; };
+		4D1A13401E39678D00282853 /* MCForEuropean.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MCForEuropean.hpp; sourceTree = "<group>"; };
+		4D79A3381E4FCFCB008E2B8E /* StochasticProcess.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = StochasticProcess.hpp; sourceTree = "<group>"; };
+		4D79A33A1E4FD9D1008E2B8E /* BlackScholesProcess.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlackScholesProcess.cpp; sourceTree = "<group>"; };
+		4D91243B1E3817F4005B8A1C /* BinominalTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinominalTree.cpp; sourceTree = "<group>"; };
+		4D91243C1E3817F4005B8A1C /* BinominalTree.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BinominalTree.hpp; sourceTree = "<group>"; };
+		4D91243E1E381FAF005B8A1C /* UpAndOutPutPayoff.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UpAndOutPutPayoff.cpp; sourceTree = "<group>"; };
+		4D91243F1E381FAF005B8A1C /* UpAndOutPutPayoff.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = UpAndOutPutPayoff.hpp; sourceTree = "<group>"; };
+		4D9124411E382013005B8A1C /* TrinominalTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TrinominalTree.cpp; sourceTree = "<group>"; };
+		4D9124421E382013005B8A1C /* TrinominalTree.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TrinominalTree.hpp; sourceTree = "<group>"; };
+		4DB39E361E4D4B3C003AF56D /* AntitheticMC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AntitheticMC.cpp; sourceTree = "<group>"; };
+		4DB39E371E4D4B3C003AF56D /* AntitheticMC.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AntitheticMC.hpp; sourceTree = "<group>"; };
+		4DB39E3A1E4D5211003AF56D /* MeanReverseProcess.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MeanReverseProcess.cpp; sourceTree = "<group>"; };
+		4DB39E3B1E4D5211003AF56D /* MeanReverseProcess.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MeanReverseProcess.hpp; sourceTree = "<group>"; };
+		4DB39E3D1E4D53F9003AF56D /* OrdinaryMC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OrdinaryMC.cpp; sourceTree = "<group>"; };
+		4DB39E3E1E4D53F9003AF56D /* OrdinaryMC.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = OrdinaryMC.hpp; sourceTree = "<group>"; };
+		4DB39E411E4D54A5003AF56D /* HestonProcess.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HestonProcess.hpp; sourceTree = "<group>"; };
+		4DB39E431E4D8F15003AF56D /* ControlVariableMC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ControlVariableMC.cpp; sourceTree = "<group>"; };
+		4DB39E441E4D8F15003AF56D /* ControlVariableMC.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ControlVariableMC.hpp; sourceTree = "<group>"; };
+		4DB39E471E4D9472003AF56D /* ImportanceSamplingMC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImportanceSamplingMC.cpp; sourceTree = "<group>"; };
+		4DB39E481E4D9472003AF56D /* ImportanceSamplingMC.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ImportanceSamplingMC.hpp; sourceTree = "<group>"; };
+		4DB39E521E4D9B80003AF56D /* BlackScholesAnalytical.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlackScholesAnalytical.cpp; sourceTree = "<group>"; };
+		4DB39E531E4D9B80003AF56D /* BlackScholesAnalytical.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BlackScholesAnalytical.hpp; sourceTree = "<group>"; };
+		4DB39E551E4DA1C2003AF56D /* NormalDistribution.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NormalDistribution.cpp; sourceTree = "<group>"; };
+		4DB39E561E4DA1C2003AF56D /* NormalDistribution.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NormalDistribution.hpp; sourceTree = "<group>"; };
+		4DC244001E37EEDE00EA3F1F /* OptionPricer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OptionPricer; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DC244031E37EEDE00EA3F1F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4DC2440A1E37EF9300EA3F1F /* AmericanOption.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AmericanOption.cpp; sourceTree = "<group>"; };
+		4DC2440B1E37EF9300EA3F1F /* AmericanOption.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AmericanOption.hpp; sourceTree = "<group>"; };
+		4DC2440D1E37EFF800EA3F1F /* BinaryCallPayoff.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryCallPayoff.cpp; sourceTree = "<group>"; };
+		4DC2440E1E37EFF800EA3F1F /* BinaryCallPayoff.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BinaryCallPayoff.hpp; sourceTree = "<group>"; };
+		4DC244101E37F07200EA3F1F /* BinaryPutPayoff.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryPutPayoff.cpp; sourceTree = "<group>"; };
+		4DC244111E37F07200EA3F1F /* BinaryPutPayoff.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BinaryPutPayoff.hpp; sourceTree = "<group>"; };
+		4DC244141E37F0C800EA3F1F /* BlackScholesProcess.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BlackScholesProcess.hpp; sourceTree = "<group>"; };
+		4DC244161E37F11400EA3F1F /* Option.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Option.cpp; sourceTree = "<group>"; };
+		4DC244171E37F11400EA3F1F /* Option.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Option.hpp; sourceTree = "<group>"; };
+		4DC244191E37F17A00EA3F1F /* Payoff.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Payoff.cpp; sourceTree = "<group>"; };
+		4DC2441A1E37F17A00EA3F1F /* Payoff.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Payoff.hpp; sourceTree = "<group>"; };
+		4DC2441D1E37F1CD00EA3F1F /* PricingEngine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PricingEngine.hpp; sourceTree = "<group>"; };
+		4DC2441F1E37F20C00EA3F1F /* RandomNumberGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RandomNumberGenerator.cpp; sourceTree = "<group>"; };
+		4DC244201E37F20C00EA3F1F /* RandomNumberGenerator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RandomNumberGenerator.hpp; sourceTree = "<group>"; };
+		4DC244251E37F45500EA3F1F /* CallPayoff.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CallPayoff.cpp; sourceTree = "<group>"; };
+		4DC244261E37F45500EA3F1F /* CallPayoff.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CallPayoff.hpp; sourceTree = "<group>"; };
+		4DC244281E37F4A000EA3F1F /* EuropeanOption.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EuropeanOption.cpp; sourceTree = "<group>"; };
+		4DC244291E37F4A000EA3F1F /* EuropeanOption.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EuropeanOption.hpp; sourceTree = "<group>"; };
+		4DC2442E1E37F52200EA3F1F /* PutPayoff.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PutPayoff.cpp; sourceTree = "<group>"; };
+		4DC2442F1E37F52200EA3F1F /* PutPayoff.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PutPayoff.hpp; sourceTree = "<group>"; };
+		4DC244321E37F5BB00EA3F1F /* FDBase.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FDBase.hpp; sourceTree = "<group>"; };
+		4DC244341E37F65100EA3F1F /* FDExplicit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FDExplicit.cpp; sourceTree = "<group>"; };
+		4DC244351E37F65100EA3F1F /* FDExplicit.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FDExplicit.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DC243FD1E37EEDE00EA3F1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D4BCDE61E3982B400B9EBAF /* Option */ = {
+			isa = PBXGroup;
+			children = (
+				4DC244171E37F11400EA3F1F /* Option.hpp */,
+				4DC244161E37F11400EA3F1F /* Option.cpp */,
+				4DC2440B1E37EF9300EA3F1F /* AmericanOption.hpp */,
+				4DC2440A1E37EF9300EA3F1F /* AmericanOption.cpp */,
+				4DC244291E37F4A000EA3F1F /* EuropeanOption.hpp */,
+				4DC244281E37F4A000EA3F1F /* EuropeanOption.cpp */,
+			);
+			name = Option;
+			sourceTree = "<group>";
+		};
+		4D4BCDE71E39831100B9EBAF /* Payoff */ = {
+			isa = PBXGroup;
+			children = (
+				4DC2441A1E37F17A00EA3F1F /* Payoff.hpp */,
+				4DC244191E37F17A00EA3F1F /* Payoff.cpp */,
+				4DC2440E1E37EFF800EA3F1F /* BinaryCallPayoff.hpp */,
+				4DC2440D1E37EFF800EA3F1F /* BinaryCallPayoff.cpp */,
+				4DC244111E37F07200EA3F1F /* BinaryPutPayoff.hpp */,
+				4DC244101E37F07200EA3F1F /* BinaryPutPayoff.cpp */,
+				4DC2442F1E37F52200EA3F1F /* PutPayoff.hpp */,
+				4DC2442E1E37F52200EA3F1F /* PutPayoff.cpp */,
+				4DC244261E37F45500EA3F1F /* CallPayoff.hpp */,
+				4DC244251E37F45500EA3F1F /* CallPayoff.cpp */,
+				4D91243F1E381FAF005B8A1C /* UpAndOutPutPayoff.hpp */,
+				4D91243E1E381FAF005B8A1C /* UpAndOutPutPayoff.cpp */,
+			);
+			name = Payoff;
+			sourceTree = "<group>";
+		};
+		4D4BCDE81E39835800B9EBAF /* PricingEngine */ = {
+			isa = PBXGroup;
+			children = (
+				4DC2441D1E37F1CD00EA3F1F /* PricingEngine.hpp */,
+				4DB39E4B1E4D9AD2003AF56D /* AnalyticalPrice */,
+				4D4BCDEA1E3983E800B9EBAF /* MCEuro */,
+				4D4BCDE91E3983A700B9EBAF /* FD */,
+				4D79A33C1E4FE2B0008E2B8E /* TreePricer */,
+				4D1A133A1E3962A700282853 /* MCForAmerican.hpp */,
+				4D1A13391E3962A700282853 /* MCForAmerican.cpp */,
+			);
+			name = PricingEngine;
+			sourceTree = "<group>";
+		};
+		4D4BCDE91E3983A700B9EBAF /* FD */ = {
+			isa = PBXGroup;
+			children = (
+				4DC244321E37F5BB00EA3F1F /* FDBase.hpp */,
+				4DC244351E37F65100EA3F1F /* FDExplicit.hpp */,
+				4DC244341E37F65100EA3F1F /* FDExplicit.cpp */,
+				4D1A13341E39289900282853 /* FDCrankNicolson.hpp */,
+				4D1A13331E39289900282853 /* FDCrankNicolson.cpp */,
+			);
+			name = FD;
+			sourceTree = "<group>";
+		};
+		4D4BCDEA1E3983E800B9EBAF /* MCEuro */ = {
+			isa = PBXGroup;
+			children = (
+				4D1A13401E39678D00282853 /* MCForEuropean.hpp */,
+				4DB39E361E4D4B3C003AF56D /* AntitheticMC.cpp */,
+				4DB39E371E4D4B3C003AF56D /* AntitheticMC.hpp */,
+				4DB39E3D1E4D53F9003AF56D /* OrdinaryMC.cpp */,
+				4DB39E3E1E4D53F9003AF56D /* OrdinaryMC.hpp */,
+				4DB39E431E4D8F15003AF56D /* ControlVariableMC.cpp */,
+				4DB39E441E4D8F15003AF56D /* ControlVariableMC.hpp */,
+				4DB39E471E4D9472003AF56D /* ImportanceSamplingMC.cpp */,
+				4DB39E481E4D9472003AF56D /* ImportanceSamplingMC.hpp */,
+			);
+			name = MCEuro;
+			sourceTree = "<group>";
+		};
+		4D79A3361E4FCCFC008E2B8E /* math */ = {
+			isa = PBXGroup;
+			children = (
+				4DB39E561E4DA1C2003AF56D /* NormalDistribution.hpp */,
+				4DB39E551E4DA1C2003AF56D /* NormalDistribution.cpp */,
+				4DC244201E37F20C00EA3F1F /* RandomNumberGenerator.hpp */,
+				4DC2441F1E37F20C00EA3F1F /* RandomNumberGenerator.cpp */,
+			);
+			name = math;
+			sourceTree = "<group>";
+		};
+		4D79A33C1E4FE2B0008E2B8E /* TreePricer */ = {
+			isa = PBXGroup;
+			children = (
+				4D91243C1E3817F4005B8A1C /* BinominalTree.hpp */,
+				4D91243B1E3817F4005B8A1C /* BinominalTree.cpp */,
+				4D9124421E382013005B8A1C /* TrinominalTree.hpp */,
+				4D9124411E382013005B8A1C /* TrinominalTree.cpp */,
+			);
+			name = TreePricer;
+			sourceTree = "<group>";
+		};
+		4DB39E391E4D51C8003AF56D /* StochasticProcess */ = {
+			isa = PBXGroup;
+			children = (
+				4D79A3381E4FCFCB008E2B8E /* StochasticProcess.hpp */,
+				4DC244141E37F0C800EA3F1F /* BlackScholesProcess.hpp */,
+				4D79A33A1E4FD9D1008E2B8E /* BlackScholesProcess.cpp */,
+				4DB39E411E4D54A5003AF56D /* HestonProcess.hpp */,
+				4DB39E3A1E4D5211003AF56D /* MeanReverseProcess.cpp */,
+				4DB39E3B1E4D5211003AF56D /* MeanReverseProcess.hpp */,
+			);
+			name = StochasticProcess;
+			sourceTree = "<group>";
+		};
+		4DB39E4B1E4D9AD2003AF56D /* AnalyticalPrice */ = {
+			isa = PBXGroup;
+			children = (
+				4DB39E531E4D9B80003AF56D /* BlackScholesAnalytical.hpp */,
+				4DB39E521E4D9B80003AF56D /* BlackScholesAnalytical.cpp */,
+			);
+			name = AnalyticalPrice;
+			sourceTree = "<group>";
+		};
+		4DC243F71E37EEDE00EA3F1F = {
+			isa = PBXGroup;
+			children = (
+				4DC244021E37EEDE00EA3F1F /* OptionPricer */,
+				4DC244011E37EEDE00EA3F1F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4DC244011E37EEDE00EA3F1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DC244001E37EEDE00EA3F1F /* OptionPricer */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DC244021E37EEDE00EA3F1F /* OptionPricer */ = {
+			isa = PBXGroup;
+			children = (
+				4DC244031E37EEDE00EA3F1F /* main.cpp */,
+				4D4BCDE61E3982B400B9EBAF /* Option */,
+				4D4BCDE71E39831100B9EBAF /* Payoff */,
+				4D4BCDE81E39835800B9EBAF /* PricingEngine */,
+				4DB39E391E4D51C8003AF56D /* StochasticProcess */,
+				4D79A3361E4FCCFC008E2B8E /* math */,
+			);
+			path = OptionPricer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DC243FF1E37EEDE00EA3F1F /* OptionPricer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DC244071E37EEDE00EA3F1F /* Build configuration list for PBXNativeTarget "OptionPricer" */;
+			buildPhases = (
+				4DC243FC1E37EEDE00EA3F1F /* Sources */,
+				4DC243FD1E37EEDE00EA3F1F /* Frameworks */,
+				4DC243FE1E37EEDE00EA3F1F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OptionPricer;
+			productName = OptionPricer;
+			productReference = 4DC244001E37EEDE00EA3F1F /* OptionPricer */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DC243F81E37EEDE00EA3F1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "刘颖";
+				TargetAttributes = {
+					4DC243FF1E37EEDE00EA3F1F = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4DC243FB1E37EEDE00EA3F1F /* Build configuration list for PBXProject "OptionPricer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4DC243F71E37EEDE00EA3F1F;
+			productRefGroup = 4DC244011E37EEDE00EA3F1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DC243FF1E37EEDE00EA3F1F /* OptionPricer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DC243FC1E37EEDE00EA3F1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D9124431E382013005B8A1C /* TrinominalTree.cpp in Sources */,
+				4DB39E381E4D4B3C003AF56D /* AntitheticMC.cpp in Sources */,
+				4DB39E451E4D8F15003AF56D /* ControlVariableMC.cpp in Sources */,
+				4DC2440C1E37EF9300EA3F1F /* AmericanOption.cpp in Sources */,
+				4D1A13351E39289900282853 /* FDCrankNicolson.cpp in Sources */,
+				4D9124401E381FAF005B8A1C /* UpAndOutPutPayoff.cpp in Sources */,
+				4DB39E491E4D9472003AF56D /* ImportanceSamplingMC.cpp in Sources */,
+				4DB39E3C1E4D5211003AF56D /* MeanReverseProcess.cpp in Sources */,
+				4DB39E571E4DA1C2003AF56D /* NormalDistribution.cpp in Sources */,
+				4DC244041E37EEDE00EA3F1F /* main.cpp in Sources */,
+				4DB39E541E4D9B80003AF56D /* BlackScholesAnalytical.cpp in Sources */,
+				4D1A133B1E3962A700282853 /* MCForAmerican.cpp in Sources */,
+				4DC244361E37F65100EA3F1F /* FDExplicit.cpp in Sources */,
+				4DC2441B1E37F17A00EA3F1F /* Payoff.cpp in Sources */,
+				4DC244211E37F20C00EA3F1F /* RandomNumberGenerator.cpp in Sources */,
+				4DC2442A1E37F4A000EA3F1F /* EuropeanOption.cpp in Sources */,
+				4DC244271E37F45500EA3F1F /* CallPayoff.cpp in Sources */,
+				4D91243D1E3817F4005B8A1C /* BinominalTree.cpp in Sources */,
+				4DC244301E37F52200EA3F1F /* PutPayoff.cpp in Sources */,
+				4DC2440F1E37EFF800EA3F1F /* BinaryCallPayoff.cpp in Sources */,
+				4DC244181E37F11400EA3F1F /* Option.cpp in Sources */,
+				4D79A33B1E4FD9D1008E2B8E /* BlackScholesProcess.cpp in Sources */,
+				4DC244121E37F07200EA3F1F /* BinaryPutPayoff.cpp in Sources */,
+				4DB39E3F1E4D53F9003AF56D /* OrdinaryMC.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4DC244051E37EEDE00EA3F1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4DC244061E37EEDE00EA3F1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4DC244081E37EEDE00EA3F1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"HEADER_SEARCH_PATHS[arch=*]" = "/Users/liuying/Desktop/cppProj/eigen-eigen-da9b4e14c255";
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "/Users/liuying/Desktop/cppProj/eigen-eigen-da9b4e14c255";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = YES;
+			};
+			name = Debug;
+		};
+		4DC244091E37EEDE00EA3F1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"HEADER_SEARCH_PATHS[arch=*]" = "/Users/liuying/Desktop/cppProj/eigen-eigen-da9b4e14c255";
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "/Users/liuying/Desktop/cppProj/eigen-eigen-da9b4e14c255";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DC243FB1E37EEDE00EA3F1F /* Build configuration list for PBXProject "OptionPricer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DC244051E37EEDE00EA3F1F /* Debug */,
+				4DC244061E37EEDE00EA3F1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DC244071E37EEDE00EA3F1F /* Build configuration list for PBXNativeTarget "OptionPricer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DC244081E37EEDE00EA3F1F /* Debug */,
+				4DC244091E37EEDE00EA3F1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DC243F81E37EEDE00EA3F1F /* Project object */;
+}
