@@ -2,8 +2,8 @@
 //  NaiveMC.cpp
 //  OptionPricer
 //
-//  Created by 刘颖 on 1/25/17.
-//  Copyright © 2017 刘颖. All rights reserved.
+//  Created by YingLiu on 1/25/17.
+//  Copyright © 2017 YingLiu. All rights reserved.
 //
 
 
@@ -50,7 +50,7 @@ double OrdinaryMC::PriceForAmerican(const shared_ptr<Payoff>& payoff) {
 
 
 
-// 怎么加，在哪里加
+
 // double OrdinaryMC::Delta(double K) {
 //     double epsilon = 0.01;
 //     double
